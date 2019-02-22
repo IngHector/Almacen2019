@@ -31,5 +31,47 @@ namespace DataAccessLayer
                         };
             return query;
         }
+        public void delete(productos producto)
+        {
+            DataClassesDataContext context = new DataClassesDataContext();
+            productos productoDelete = (from p in context.productos
+                                  where p.id == producto.id
+                                  select p
+                                ).First();
+
+            context.productos.DeleteOnSubmit(productoDelete);
+            try
+            {
+                context.SubmitChanges();
+
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.ToString());
+            }
+            
+        }
+
+        public void update(productos producto) {
+            DataClassesDataContext context = new DataClassesDataContext();
+            productos productoUpdate = (from p in context.productos
+                                        where p.id == producto.id
+                                        select p).First();
+            productoUpdate = producto;
+            try
+            {
+                context.SubmitChanges();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        }
+
+        public void add(productos producto) {
+            DataClassesDataContext context = new DataClassesDataContext();
+            context.productos.InsertOnSubmit(producto);
+            try
+            {
+                context.SubmitChanges();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        }
     }
 }
