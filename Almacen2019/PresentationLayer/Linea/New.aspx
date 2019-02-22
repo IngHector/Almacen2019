@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="New Linea" Font-Bold="True" Font-Size="Larger"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="New Linea " Font-Bold="True" Font-Size="Larger"></asp:Label>
             <br />
             <asp:Label ID="lblClave" runat="server" Text="Clave "></asp:Label>
             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
