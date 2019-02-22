@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9a89aca4-846e-4821-af0e-37a1a3786a27" absoluteBounds="0.75, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesDataContext/lineas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="714f3610-80f8-4358-b047-44b7691af208" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c08781c-4e7e-40d8-9833-bfe9b48e6bdd" absoluteBounds="3.5, 0.875, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/DataClassesDataContext/productos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d61134a-5aea-4e0a-89c7-ebb0705ccf9b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.69314697265625); (3.5 : 1.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/lineas/lineas_productos" />
+      <nodes>
+        <classShapeMoniker Id="9a89aca4-846e-4821-af0e-37a1a3786a27" />
+        <classShapeMoniker Id="0c08781c-4e7e-40d8-9833-bfe9b48e6bdd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

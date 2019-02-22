@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Almacen" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-P6HD3SM;Initial Catalog=Almacen;User ID=sa" SettingsObjectName="DataAccessLayer.Properties.Settings" SettingsPropertyName="AlmacenConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.lineas" Member="lineas">
+    <Type Name="lineas">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Association Name="lineas_productos" Member="productos" ThisKey="id" OtherKey="id_lineas" Type="productos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.productos" Member="productos">
+    <Type Name="productos">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="id_lineas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="lineas_productos" Member="lineas" ThisKey="id_lineas" OtherKey="id" Type="lineas" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

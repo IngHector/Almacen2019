@@ -1,0 +1,11 @@
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\PresentationLayer.dll.config
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\bin\DataAccessLayer.dll.config
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\obj\Debug\PresentationLayer.csprojAssemblyReference.cache
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\OFhec\source\repos\Almacen2019\PresentationLayer\obj\Debug\PresentationLayer.pdb
