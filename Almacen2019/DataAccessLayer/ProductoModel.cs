@@ -24,6 +24,7 @@ namespace DataAccessLayer
                         //where p.clave.Equals("1")
                         select new
                         {
+                            id = p.id,
                             Clave =p.clave,
                             Nombre = p.nombre,
                             Linea = l.nombre

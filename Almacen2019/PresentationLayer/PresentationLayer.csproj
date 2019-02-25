@@ -70,6 +70,7 @@
     <Content Include="Linea\Default.aspx" />
     <Content Include="Linea\New.aspx" />
     <Content Include="Producto\Default.aspx" />
+    <Content Include="Producto\Delete.aspx" />
     <Content Include="Producto\New.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +95,13 @@
     </Compile>
     <Compile Include="Producto\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producto\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto\New.aspx.cs">
       <DependentUpon>New.aspx</DependentUpon>

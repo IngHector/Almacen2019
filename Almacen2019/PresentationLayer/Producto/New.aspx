@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label3" runat="server" Text="New Producto"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="New Producto" Font-Size="X-Large"></asp:Label>
             <br />
             <asp:Label ID="lblClave" runat="server" Text="Clave"></asp:Label>
             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>

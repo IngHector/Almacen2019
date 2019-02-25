@@ -11,6 +11,9 @@
     <form id="form1" runat="server">
         <div>
             <asp:GridView ID="tableProductos" runat="server">
+                <Columns>
+                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Delete.aspx?id={0}" HeaderText="Options" Text="Delete" />
+                </Columns>
             </asp:GridView>
         </div>
     </form>
