@@ -17,15 +17,25 @@ namespace PresentationLayer.Linea
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            lineas linea = new lineas()
+            if (txtClave.Text == "" || txtNombre.Text == "")
             {
-                clave = txtClave.Text,
-                nombre =txtNombre.Text
-            };
+                lblinfo.Visible = true;
+                lblinfo.Text = "Ingresa Todos Los Campos";
+            }
+            else {
+                lblinfo.Visible = false;
+                lineas linea = new lineas()
+                    {
+                        clave = txtClave.Text,
+                        nombre =txtNombre.Text
+                    };
 
             LineaModel lineamodel = new LineaModel();
             lineamodel.add(linea);
             clearForm();
+            }
+
+           
 
             //lineas li = new lineas();
             //li.clave = txtClave.Text;
@@ -34,6 +44,11 @@ namespace PresentationLayer.Linea
         private void clearForm() {
             txtClave.Text = "";
             txtNombre.Text = "";
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

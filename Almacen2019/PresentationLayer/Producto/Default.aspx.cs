@@ -16,6 +16,16 @@ namespace PresentationLayer.Producto
             tableProductos.DataSource = productomodel.getAllProductos();
             tableProductos.DataBind();
         }
+
+        protected void new_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void new_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("New.aspx");
+        }
     }
   
 }

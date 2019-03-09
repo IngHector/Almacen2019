@@ -32,13 +32,23 @@ namespace DataAccessLayer
                         };
             return query;
         }
+
+        public productos getById(productos product)
+        {
+
+            DataClassesDataContext context = new DataClassesDataContext();
+            productos producto = (from p in context.productos
+                                        where p.id ==  product.id
+                                        select p).First();
+            return producto;
+        }
+
         public void delete(productos producto)
         {
             DataClassesDataContext context = new DataClassesDataContext();
             productos productoDelete = (from p in context.productos
                                   where p.id == producto.id
-                                  select p
-                                ).First();
+                                  select p).First();
 
             context.productos.DeleteOnSubmit(productoDelete);
             try
@@ -57,7 +67,10 @@ namespace DataAccessLayer
             productos productoUpdate = (from p in context.productos
                                         where p.id == producto.id
                                         select p).First();
-            productoUpdate = producto;
+           
+            productoUpdate.clave = producto.clave;
+            productoUpdate.nombre = producto.nombre;
+            productoUpdate.id_lineas = producto.id_lineas;
             try
             {
                 context.SubmitChanges();

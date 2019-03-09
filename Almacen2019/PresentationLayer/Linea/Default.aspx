@@ -11,7 +11,13 @@
     <form id="form1" runat="server">
         <div>
             <asp:GridView ID="tableLineas" runat="server">
+                <Columns>
+                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Delete.aspx?id={0}" HeaderText="Options" Text="Delete" />
+                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Update.aspx?id={0}" HeaderText="Options" Text="Update" />
+                </Columns>
             </asp:GridView>
+            <br />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Nueva Linea" />
         </div>
     </form>
 </body>

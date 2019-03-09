@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PresentationLayer.Producto {
+namespace PresentationLayer.Linea {
     
     
-    public partial class Default {
+    public partial class Delete {
         
         /// <summary>
         /// Control form1.
@@ -22,21 +22,30 @@ namespace PresentationLayer.Producto {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control tableProductos.
+        /// Control lblLinea.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView tableProductos;
+        protected global::System.Web.UI.WebControls.Label lblLinea;
         
         /// <summary>
-        /// Control new.
+        /// Control idDelete.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button @new;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden idDelete;
+        
+        /// <summary>
+        /// Control btnConfirmar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmar;
     }
 }

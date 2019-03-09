@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataAccessLayer;
-namespace PresentationLayer.Producto
+
+namespace PresentationLayer.Linea
 {
     public partial class Delete : System.Web.UI.Page
     {
@@ -14,20 +15,19 @@ namespace PresentationLayer.Producto
             int id = int.Parse(Request.QueryString["id"].ToString());
             idDelete.Value = id.ToString();
 
-            ProductoModel pm = new ProductoModel();
-            productos p = pm.getById(new productos() { id = id });
+            LineaModel pm = new LineaModel();
+            lineas p = pm.getById(new lineas() { id = id });
 
-            lblProducto.Text = "Eliminar el producto " + p.nombre+"?";
+            lblLinea.Text = "Eliminar la Linea " + p.nombre + "?";
         }
 
         protected void btnConfirmar_Click(object sender, EventArgs e)
         {
-            ProductoModel productoModel = new ProductoModel();
-            productos p = new productos();
-            p.id = int.Parse(idDelete.Value.ToString());
-            productoModel.delete(p);
+            LineaModel lineasModel= new LineaModel();
+            lineas l = new lineas();
+            l.id = int.Parse(idDelete.Value.ToString());
+            lineasModel.delete(l);
             Response.Redirect("Default.aspx");
-            
         }
     }
 }

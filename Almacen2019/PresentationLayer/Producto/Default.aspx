@@ -13,8 +13,11 @@
             <asp:GridView ID="tableProductos" runat="server">
                 <Columns>
                     <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Delete.aspx?id={0}" HeaderText="Options" Text="Delete" />
+                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Update.aspx?id={0}" Text="Update" HeaderText="Options" />
                 </Columns>
             </asp:GridView>
+            <br />
+            <asp:Button ID="new" runat="server" Text="Nuevo Producto" OnClick="new_Click1" />
         </div>
     </form>
 </body>
